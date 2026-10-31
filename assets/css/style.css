@@ -292,7 +292,7 @@ ul, ol { margin: 0; padding: 0; }
   flex: none;
 }
 .brand img,
-.brand svg { width: 36px; height: 36px; }
+.brand svg { width: 40px; height: 40px; object-fit: contain; }
 .brand-text { display: grid; line-height: 1; }
 .brand-name {
   font-size: 0.98rem;
@@ -1075,6 +1075,12 @@ ul, ol { margin: 0; padding: 0; }
 .footer-brand { display: grid; gap: 16px; align-content: start; justify-items: start; }
 .footer-brand .brand-name { color: #fff; }
 .footer-brand .brand-sub { color: rgba(245, 243, 238, 0.45); }
+.footer-brand .brand img {
+  background: var(--paper);
+  border-radius: 10px;
+  padding: 3px;
+  box-sizing: border-box;
+}
 .footer-brand p { font-size: 0.87rem; line-height: 1.6; max-width: 34ch; color: rgba(245, 243, 238, 0.55); }
 .footer-mail {
   display: inline-flex;

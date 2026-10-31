@@ -10,3 +10,5 @@
 ._.freebuff
 screens/*.rgba
 screens/*.py
+screens/*.mjs
+screens/logo-*.png
