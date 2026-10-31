@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" role="img" aria-label="Schematic symbol drawing of a multi-part IC with pin numbers and net names">
+  <defs>
+    <pattern id="sgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0v24" fill="none" stroke="#0A0E15" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="460" fill="#F1EEE6"/>
+  <rect width="640" height="460" fill="url(#sgrid)"/>
+
+  <!-- part block -->
+  <rect x="204" y="120" width="232" height="230" rx="4" fill="#FBFAF6" stroke="#0A0E15" stroke-width="1.6"/>
+  <text x="220" y="146" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#5D6675">U3A · SENSOR AFE</text>
+  <text x="220" y="236" font-family="Inter Tight, system-ui, sans-serif" font-size="30" font-weight="600" fill="#0A0E15">AFE</text>
+  <text x="220" y="258" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#5D6675">24-BIT ΔΣ</text>
+
+  <!-- pins left -->
+  <g stroke="#0A0E15" stroke-width="1.4" fill="none">
+    <path d="M156 168h48M156 216h48M156 264h48M156 312h48"/>
+    <path d="M436 168h48M436 216h48M436 264h48M436 312h48"/>
+  </g>
+  <g fill="#C0763E">
+    <circle cx="156" cy="168" r="3"/><circle cx="156" cy="216" r="3"/><circle cx="156" cy="264" r="3"/><circle cx="156" cy="312" r="3"/>
+    <circle cx="484" cy="168" r="3"/><circle cx="484" cy="216" r="3"/><circle cx="484" cy="264" r="3"/><circle cx="484" cy="312" r="3"/>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="8.5" fill="#0A0E15">
+    <text x="160" y="161">1</text><text x="160" y="209">2</text><text x="160" y="257">3</text><text x="160" y="305">4</text>
+    <text x="466" y="161">24</text><text x="466" y="209">23</text><text x="466" y="257">22</text><text x="466" y="305">21</text>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="8" fill="#5D6675" text-anchor="end">
+    <text x="146" y="158">VIN</text><text x="146" y="206">GND</text><text x="146" y="254">SCLK</text><text x="146" y="302">CS</text>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="8" fill="#5D6675">
+    <text x="494" y="158">OUTP</text><text x="494" y="206">OUTN</text><text x="494" y="254">REF</text><text x="494" y="302">DRDY</text>
+  </g>
+
+  <!-- annotations -->
+  <g stroke="#2C53FF" stroke-width="1" fill="none" stroke-dasharray="4 4">
+    <path d="M204 350h232"/>
+  </g>
+  <text x="204" y="368" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#2C53FF">PIN MAP VERIFIED AGAINST REV. D DATASHEET</text>
+
+  <g font-family="JetBrains Mono, monospace" font-size="9" fill="#5D6675">
+    <text x="40" y="42">SYMBOL / IEC 60617 STYLE</text>
+    <text x="40" y="424">MULTI-PART · 4 UNITS</text>
+    <text x="470" y="424">ERC CLEAN</text>
+  </g>
+  <g fill="#0A0E15" font-family="JetBrains Mono, monospace" font-size="8">
+    <rect x="40" y="60" width="9" height="9" fill="#2C53FF"/>
+    <text x="56" y="68">POWER PIN / INVISIBLE</text>
+  </g>
+</svg>

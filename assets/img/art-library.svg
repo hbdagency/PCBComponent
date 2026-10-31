@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" role="img" aria-label="Grid of ECAD library components represented as symbols and footprints with revision tags">
+  <defs>
+    <pattern id="lgrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0v32" fill="none" stroke="#FFFFFF" stroke-opacity=".05"/>
+    </pattern>
+    <linearGradient id="lgrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111A2C"/><stop offset="1" stop-color="#0A101C"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="460" fill="url(#lgrad)"/>
+  <rect width="640" height="460" fill="url(#lgrid)"/>
+
+  <g stroke="#26364E" stroke-width="1">
+    <rect x="40" y="56" width="170" height="104" rx="8" fill="#0E1626"/>
+    <rect x="234" y="56" width="170" height="104" rx="8" fill="#0E1626"/>
+    <rect x="428" y="56" width="170" height="104" rx="8" fill="#0E1626"/>
+    <rect x="40" y="180" width="170" height="104" rx="8" fill="#0E1626"/>
+    <rect x="234" y="180" width="170" height="104" rx="8" fill="#0E1626" stroke="#2C53FF"/>
+    <rect x="428" y="180" width="170" height="104" rx="8" fill="#0E1626"/>
+    <rect x="40" y="304" width="170" height="104" rx="8" fill="#0E1626"/>
+    <rect x="234" y="304" width="170" height="104" rx="8" fill="#0E1626"/>
+    <rect x="428" y="304" width="170" height="104" rx="8" fill="#0E1626"/>
+  </g>
+
+  <!-- cell contents -->
+  <g fill="none" stroke="#C0763E" stroke-width="1.6">
+    <rect x="86" y="88" width="34" height="42" rx="2"/>
+    <path d="M72 96h14M72 122h14M120 96h14M120 122h14"/>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="7.5" fill="#7C8DA3">
+    <text x="56" y="150">QFN-32</text><text x="140" y="150">REV B</text>
+  </g>
+
+  <g fill="none" stroke="#C0763E" stroke-width="1.6">
+    <rect x="290" y="94" width="56" height="30" rx="2"/>
+    <path d="M270 109h20M346 109h20"/>
+    <path d="M300 94v-10M324 94v-10"/>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="7.5" fill="#7C8DA3">
+    <text x="250" y="150">SOT-23-5</text>
+  </g>
+
+  <g fill="none" stroke="#5E7391" stroke-width="1.4">
+    <circle cx="513" cy="105" r="20"/>
+    <path d="M513 85v42M493 105h42"/>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="7.5" fill="#7C8DA3">
+    <text x="444" y="150">XTAL</text><text x="548" y="150">REV A</text>
+  </g>
+
+  <g fill="none" stroke="#5E7391" stroke-width="1.4">
+    <path d="M90 210h30l10 10v22l-10 10H90z"/>
+    <path d="M72 220h18M72 242h18M130 226h20"/>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="7.5" fill="#7C8DA3">
+    <text x="56" y="274">SOIC-8</text>
+  </g>
+
+  <!-- highlighted cell -->
+  <g fill="none" stroke="#5D86FF" stroke-width="1.6">
+    <rect x="290" y="218" width="58" height="46" rx="3"/>
+    <path d="M272 232h18M272 250h18M348 232h18M348 250h18"/>
+  </g>
+  <g fill="#5D86FF" font-family="JetBrains Mono, monospace" font-size="7.5">
+    <text x="256" y="274" fill="#93ACFF">LQFP-64</text>
+    <text x="352" y="274">SYNCED</text>
+  </g>
+
+  <g fill="none" stroke="#C0763E" stroke-width="1.6">
+    <circle cx="512" cy="232" r="13"/>
+    <path d="M494 232h6M524 232h6M512 214v6M512 244v6"/>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="7.5" fill="#7C8DA3">
+    <text x="466" y="274">IND-1210</text>
+  </g>
+
+  <g fill="none" stroke="#5E7391" stroke-width="1.4">
+    <rect x="88" y="338" width="46" height="30" rx="2"/>
+    <path d="M96 368v10M112 368v10M126 368v10"/>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="7.5" fill="#7C8DA3">
+    <text x="56" y="398">SOT-223</text>
+  </g>
+
+  <g fill="none" stroke="#5E7391" stroke-width="1.4">
+    <path d="M270 352h30v20h-30zM300 360h16"/>
+    <circle cx="292" cy="362" r="4"/>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="7.5" fill="#7C8DA3">
+    <text x="250" y="398">BGA-196</text>
+  </g>
+
+  <g fill="none" stroke="#C0763E" stroke-width="1.4">
+    <path d="M446 350h40v26h-40z"/>
+    <path d="M452 350v-8M480 350v-8"/>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="7.5" fill="#7C8DA3">
+    <text x="444" y="398">USB-C-16P</text>
+  </g>
+
+  <g font-family="JetBrains Mono, monospace" font-size="9" fill="#6E8099">
+    <text x="40" y="34">ECAD LIBRARY / VAULT</text>
+    <text x="470" y="440">REVISION CONTROLLED</text>
+  </g>
+</svg>

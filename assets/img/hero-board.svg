@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" role="img" aria-label="Illustration of a green printed circuit board with copper traces, a QFP microcontroller, a BGA package and connectors">
+  <defs>
+    <linearGradient id="boardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F3B2F"/>
+      <stop offset=".55" stop-color="#0B2C24"/>
+      <stop offset="1" stop-color="#08211B"/>
+    </linearGradient>
+    <linearGradient id="cuGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E0A870"/>
+      <stop offset="1" stop-color="#B4743D"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#2C53FF" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#2C53FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#FFFFFF" fill-opacity=".07"/>
+    </pattern>
+    <pattern id="balls" width="15" height="15" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="7" r="2.6" fill="#E4B27B"/>
+    </pattern>
+  </defs>
+
+  <circle cx="400" cy="330" r="330" fill="url(#halo)"/>
+
+  <g transform="rotate(-7 400 320)">
+    <rect x="92" y="104" width="616" height="436" rx="24" fill="url(#boardGrad)" stroke="#256B54" stroke-width="1.4"/>
+    <rect x="92" y="104" width="616" height="436" rx="24" fill="url(#dots)"/>
+
+    <!-- mounting holes -->
+    <g fill="#071712" stroke="#2E745D" stroke-width="2">
+      <circle cx="128" cy="140" r="13"/><circle cx="672" cy="140" r="13"/>
+      <circle cx="128" cy="504" r="13"/><circle cx="672" cy="504" r="13"/>
+    </g>
+
+    <!-- copper traces -->
+    <g fill="none" stroke="url(#cuGrad)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M170 180h54v34h46" stroke-width="4"/>
+      <path d="M170 196h40v52h60" stroke-width="3"/>
+      <path d="M200 470h-30v-52h78" stroke-width="4"/>
+      <path d="M170 440h48v-42h42" stroke-width="3"/>
+      <path d="M600 180h-46v38h-52" stroke-width="4"/>
+      <path d="M636 200h-50v64h-48" stroke-width="3"/>
+      <path d="M600 470h-48v-40h-46" stroke-width="4"/>
+      <path d="M636 452h-52v-58h-44" stroke-width="3"/>
+      <path d="M300 176h100" stroke-width="5"/>
+      <path d="M300 486h110" stroke-width="5"/>
+      <path d="M540 300h56v50" stroke-width="4"/>
+      <path d="M252 300h-44v46" stroke-width="4"/>
+      <path d="M356 190v-32" stroke-width="4"/>
+      <path d="M448 486v30" stroke-width="4"/>
+      <path d="M200 258h56v34" stroke-width="3"/>
+      <path d="M600 330h-46v44h-30" stroke-width="3"/>
+    </g>
+
+    <!-- vias -->
+    <g fill="#0A221B" stroke="#D99C64" stroke-width="2.4">
+      <circle cx="270" cy="214" r="5"/><circle cx="300" cy="258" r="5"/>
+      <circle cx="300" cy="176" r="4"/><circle cx="548" cy="266" r="4"/>
+      <circle cx="554" cy="374" r="5"/><circle cx="200" cy="258" r="5"/>
+      <circle cx="170" cy="418" r="4"/><circle cx="356" cy="158" r="4"/>
+      <circle cx="224" cy="292" r="4"/><circle cx="524" cy="430" r="4"/>
+    </g>
+
+    <!-- QFP microcontroller -->
+    <g>
+      <rect x="306" y="232" width="196" height="164" rx="8" fill="#111C19" stroke="#3B4C46"/>
+      <g stroke="#D9A066" stroke-width="5" stroke-linecap="round">
+        <line x1="318" y1="229" x2="490" y2="229" stroke-dasharray="6 11"/>
+        <line x1="318" y1="399" x2="490" y2="399" stroke-dasharray="6 11"/>
+        <line x1="303" y1="246" x2="303" y2="382" stroke-dasharray="6 11"/>
+        <line x1="505" y1="246" x2="505" y2="382" stroke-dasharray="6 11"/>
+      </g>
+      <circle cx="322" cy="248" r="3.4" fill="#0B2C24"/>
+      <text x="332" y="290" font-family="JetBrains Mono, ui-monospace, monospace" font-size="9" fill="#8FA79C">U1</text>
+      <text x="332" y="316" font-family="Inter Tight, system-ui, sans-serif" font-size="22" font-weight="600" fill="#E9E7DF">MCU-32</text>
+      <text x="332" y="338" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8" fill="#8FA79C">LQFP-64 · 0.50 mm</text>
+      <rect x="332" y="352" width="56" height="4" rx="2" fill="#2C53FF" opacity=".8"/>
+    </g>
+
+    <!-- BGA -->
+    <g>
+      <rect x="548" y="300" width="96" height="96" rx="6" fill="#111C19" stroke="#3B4C46"/>
+      <rect x="558" y="310" width="76" height="76" rx="4" fill="url(#balls)"/>
+      <text x="552" y="292" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8" fill="#8FA79C">U7 · BGA</text>
+    </g>
+
+    <!-- headers / connectors -->
+    <g>
+      <rect x="150" y="196" width="22" height="64" rx="3" fill="#0C1D18" stroke="#2C6A56"/>
+      <g fill="#D9A066">
+        <circle cx="161" cy="210" r="3.4"/><circle cx="161" cy="228" r="3.4"/>
+        <circle cx="161" cy="246" r="3.4"/>
+      </g>
+      <text x="142" y="282" font-family="JetBrains Mono, ui-monospace, monospace" font-size="7.5" fill="#7F9A8E">J1</text>
+    </g>
+    <g>
+      <rect x="548" y="158" width="52" height="30" rx="4" fill="#0C1D18" stroke="#2C6A56"/>
+      <g fill="#D9A066">
+        <rect x="554" y="164" width="8" height="18" rx="2"/>
+        <rect x="566" y="164" width="8" height="18" rx="2"/>
+        <rect x="578" y="164" width="8" height="18" rx="2"/>
+      </g>
+      <text x="552" y="204" font-family="JetBrains Mono, ui-monospace, monospace" font-size="7.5" fill="#7F9A8E">J2 · USB-C</text>
+    </g>
+
+    <!-- discretes -->
+    <g>
+      <rect x="222" y="180" width="26" height="13" rx="2" fill="#D9A066"/>
+      <rect x="222" y="180" width="8" height="13" rx="2" fill="#8C9099"/>
+      <rect x="222" y="180" width="8" height="13" rx="2" fill="#C9CDD4"/>
+      <text x="220" y="176" font-family="JetBrains Mono, ui-monospace, monospace" font-size="7" fill="#7F9A8E">R14</text>
+    </g>
+    <g>
+      <rect x="452" y="430" width="52" height="24" rx="3" fill="#8C9099" stroke="#5B625F"/>
+      <text x="456" y="446" font-family="JetBrains Mono, ui-monospace, monospace" font-size="7" fill="#22282A">10µH</text>
+    </g>
+
+    <!-- silkscreen -->
+    <g fill="#E7E5DD" opacity=".62" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8">
+      <text x="120" y="522">PCB COMPONENT SERVICES · REV B</text>
+      <text x="560" y="522">IPC-7351B</text>
+      <text x="252" y="258">1</text>
+    </g>
+    <g stroke="#E7E5DD" stroke-opacity=".28" stroke-width="1" fill="none">
+      <path d="M120 132h44M120 132v22M680 132h-44M680 132v22"/>
+    </g>
+  </g>
+</svg>

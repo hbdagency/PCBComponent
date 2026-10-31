@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services — PCB Component Services</title>
+  <meta name="description" content="Schematic symbols, IPC-7351B footprints, ECAD library management, component data enrichment, BOM/AVL validation, migration, PCB layout support and DFM review.">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="PCB Component Services — home">
+        <img src="assets/img/logo.svg" alt="" width="36" height="36">
+        <span class="brand-text">
+          <span class="brand-name">PCB Component</span>
+          <span class="brand-sub">Services</span>
+        </span>
+      </a>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn--primary btn--sm" href="contact.html">Request a quote</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--primary btn--sm" href="contact.html">Request a quote</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>Services</span>
+        </nav>
+        <span class="eyebrow">Core services</span>
+        <h1>Eight services, one component data pipeline.</h1>
+        <p class="lede">
+          Most libraries fail in the gaps: a symbol that doesn't match its footprint, a part number
+          that no longer exists, a `DNP` variant nobody documented. Our services are split so you can
+          buy exactly the gap you have — or hand over the whole pipeline.
+        </p>
+        <div class="page-hero-actions">
+          <a class="btn btn--primary" href="contact.html">Request a quote</a>
+          <a class="btn btn--ghost" href="#footprints">See how footprints are built</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICE LIST ================= -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="svc-list">
+
+          <article class="svc" id="symbols" data-reveal>
+            <div class="svc-num">01</div>
+            <div class="svc-title">
+              <span class="mono-label">Schematic data</span>
+              <h3>Schematic symbol creation</h3>
+            </div>
+            <div class="svc-desc">
+              <p>
+                Symbols built from the current datasheet, not copied from a public library. Pin
+                numbers, names, electrical types and alternate functions are mapped to the exact
+                package variant, so ERC catches real problems instead of library noise.
+              </p>
+              <p>Multi-part devices are split by function, with power pins handled explicitly and a consistent unit lettering scheme.</p>
+            </div>
+            <ul class="svc-deliverables">
+              <li>Multi-part and multi-unit symbols</li>
+              <li>IEC 60617 / ANSI style options</li>
+              <li>Power, passive and no-connect pin types</li>
+              <li>Alternate function pin names</li>
+            </ul>
+          </article>
+
+          <article class="svc" id="footprints" data-reveal>
+            <div class="svc-num">02</div>
+            <div class="svc-title">
+              <span class="mono-label">Land patterns</span>
+              <h3>PCB footprint &amp; land pattern design</h3>
+            </div>
+            <div class="svc-desc">
+              <p>
+                IPC-7351B land patterns for QFN, BGA, LGA, QFP, SON, chip components, connectors
+                and modules — with pad geometry, mask opening, paste aperture and courtyard derived
+                from the package drawing and your chosen density level.
+              </p>
+              <p>Thermal pads include a verified via array and paste windows. Every part ships with a matched 3D STEP body.</p>
+            </div>
+            <ul class="svc-deliverables">
+              <li>Density A / B / C per IPC-7351B</li>
+              <li>Courtyard, assembly and silkscreen layers</li>
+              <li>Thermal pad and via array design</li>
+              <li>STEP AP214 3D models</li>
+            </ul>
+          </article>
+
+          <article class="svc" id="libraries" data-reveal>
+            <div class="svc-num">03</div>
+            <div class="svc-title">
+              <span class="mono-label">Library operations</span>
+              <h3>ECAD library management</h3>
+            </div>
+            <div class="svc-desc">
+              <p>
+                A single governed library with part numbers, revision history and a review trail.
+                We define folder structure, naming rules and approval states, then keep the vault
+                clean as new parts arrive.
+              </p>
+              <p>Works with Altium 365, Cadence library manager, Siemens library tools, KiCad libraries and shared network vaults.</p>
+            </div>
+            <ul class="svc-deliverables">
+              <li>Naming and parameter conventions</li>
+              <li>Revision control and change logs</li>
+              <li>Duplicate detection and cleanup</li>
+              <li>Review workflow and release gates</li>
+            </ul>
+          </article>
+
+          <article class="svc" id="data" data-reveal>
+            <div class="svc-num">04</div>
+            <div class="svc-title">
+              <span class="mono-label">Part data</span>
+              <h3>Component data enrichment</h3>
+            </div>
+            <div class="svc-desc">
+              <p>
+                Turn a bare part number into a record your team can design, buy and audit from:
+                manufacturer, datasheet revision, package, tolerances, lifecycle state, compliance
+                and approved alternates.
+              </p>
+              <p>Fields are mapped to your ERP/PLM keys so the library and the BOM speak the same language.</p>
+            </div>
+            <ul class="svc-deliverables">
+              <li>MPN, manufacturer and description cleanup</li>
+              <li>Parametric attributes and tolerances</li>
+              <li>RoHS / REACH compliance status</li>
+              <li>Lifecycle state and PCN/EOL flags</li>
+            </ul>
+          </article>
+
+          <article class="svc" id="bom" data-reveal>
+            <div class="svc-num">05</div>
+            <div class="svc-title">
+              <span class="mono-label">Procurement data</span>
+              <h3>BOM validation &amp; AVL support</h3>
+            </div>
+            <div class="svc-desc">
+              <p>
+                We scrub the BOM before it reaches purchasing: missing MPNs, package mismatches,
+                non-approved alternates, inconsistent quantities and parts that are NRND or already
+                end-of-life.
+              </p>
+              <p>Alternates are checked on function and footprint, not just value — a “close enough” capacitor can change your loop stability.</p>
+            </div>
+            <ul class="svc-deliverables">
+              <li>BOM scrub and exception report</li>
+              <li>AVL / AML cross-check</li>
+              <li>Footprint-to-BOM consistency check</li>
+              <li>Obsolescence and supply-risk flags</li>
+            </ul>
+          </article>
+
+          <article class="svc" id="migration" data-reveal>
+            <div class="svc-num">06</div>
+            <div class="svc-title">
+              <span class="mono-label">Platform work</span>
+              <h3>Library migration &amp; consolidation</h3>
+            </div>
+            <div class="svc-desc">
+              <p>
+                Moving from Allegro to Altium, PADS to Xpedition, or a folder of legacy files to a
+                managed vault? We translate, de-duplicate and re-verify rather than trusting the
+                converter output.
+              </p>
+              <p>Each migrated part gets a visual and geometric check against the source before it is released.</p>
+            </div>
+            <ul class="svc-deliverables">
+              <li>Cross-platform library translation</li>
+              <li>Legacy part audit and deduplication</li>
+              <li>Geometry verification after conversion</li>
+              <li>Mapping and traceability report</li>
+            </ul>
+          </article>
+
+          <article class="svc" id="layout" data-reveal>
+            <div class="svc-num">07</div>
+            <div class="svc-title">
+              <span class="mono-label">Board design</span>
+              <h3>PCB layout &amp; design support</h3>
+            </div>
+            <div class="svc-desc">
+              <p>
+                Schematic capture, placement and routing support for teams that need an extra pair
+                of hands — from a two-layer control board to a high-speed design with controlled
+                impedance, length matching and a documented stackup.
+              </p>
+              <p>We work to your templates and layer conventions, or supply a review-ready draft for your own engineer to sign off.</p>
+            </div>
+            <ul class="svc-deliverables">
+              <li>Schematic capture and netlist cleanup</li>
+              <li>Placement and routing support</li>
+              <li>Stackup and impedance planning</li>
+              <li>Gerber, ODB++ and IPC-2581 output</li>
+            </ul>
+          </article>
+
+          <article class="svc" id="dfm" data-reveal>
+            <div class="svc-num">08</div>
+            <div class="svc-title">
+              <span class="mono-label">Release checks</span>
+              <h3>DFM review &amp; obsolescence</h3>
+            </div>
+            <div class="svc-desc">
+              <p>
+                A manufacturability pass before you release: annular ring, mask webs, silkscreen
+                clearance, solderability, panelization and assembly-side checks — reviewed against
+                your fab and assembly house capability, not a generic rule set.
+              </p>
+              <p>We also monitor lifecycle status so EOL and PCN notices turn into planned revisions rather than emergency buys.</p>
+            </div>
+            <ul class="svc-deliverables">
+              <li>DFM / DFA review report</li>
+              <li>Panelization and fiducial check</li>
+              <li>Assembly drawing and variant review</li>
+              <li>EOL monitoring and last-time-buy alerts</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTPRINT DEEP DIVE ================= -->
+    <section class="section section--surface" aria-labelledby="deep-dive-title">
+      <div class="container">
+        <div class="deep-dive">
+          <div>
+            <span class="eyebrow">Inside the work</span>
+            <h2 id="deep-dive-title" style="margin-top:14px">The footprint is the part that touches the board.</h2>
+            <p class="lede" style="margin-top:16px">
+              A symbol can be fixed in minutes. A footprint error means a re-spin. This is why our
+              builds start with the package drawing and end with a print-to-scale check, not with a
+              downloaded file.
+            </p>
+
+            <div class="density-table" style="margin-top:26px">
+              <div class="density-row density-row--head">
+                <span>Density</span><span>Pad</span><span>Courtyard</span><span>Best for</span>
+              </div>
+              <div class="density-row">
+                <strong>A · Most</strong><span>Largest</span><span>0.50 mm</span><span>Hand soldering, rework</span>
+              </div>
+              <div class="density-row">
+                <strong>B · Nominal</strong><span>Balanced</span><span>0.25 mm</span><span>Standard SMT</span>
+              </div>
+              <div class="density-row">
+                <strong>C · Least</strong><span>Smallest</span><span>0.10 mm</span><span>High density, automated</span>
+              </div>
+            </div>
+            <p class="mono-label" style="margin-top:14px;text-transform:none;letter-spacing:.02em">
+              Courtyard excess values vary for small chip components — always confirm against IPC-7351B.
+            </p>
+
+            <ul class="checklist" style="margin-top:26px">
+              <li>
+                <span class="check-icon"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6.4 4.8 9 10 3.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <div>
+                  <strong>Source checked, revision noted</strong>
+                  <p>We record which datasheet revision and package variant the part was built from.</p>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6.4 4.8 9 10 3.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <div>
+                  <strong>Geometry checked twice</strong>
+                  <p>Builder review plus an independent QC pass on pads, mask, paste and courtyard.</p>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6.4 4.8 9 10 3.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <div>
+                  <strong>Printable proof</strong>
+                  <p>A 1:1 PDF comparison against the manufacturer drawing catches scale and orientation mistakes.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="deep-dive-art">
+            <img src="assets/img/art-footprint.svg" alt="Land pattern drawing with pads, courtyard, thermal pad and dimension callouts" width="640" height="460" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STANDARDS ================= -->
+    <section class="section" id="standards">
+      <div class="container">
+        <div class="section-head section-head--split" data-reveal>
+          <div>
+            <span class="eyebrow">Standards</span>
+            <h2>The documents our work is measured against.</h2>
+          </div>
+          <p class="lede">
+            We build to the standard your assembly house audits against. If a project needs a
+            company-specific rule set, that rule set becomes part of the build checklist.
+          </p>
+        </div>
+
+        <div class="standards" style="margin-top:34px" data-reveal>
+          <div class="standard">
+            <strong>IPC-7351B</strong>
+            <span>Land pattern geometries and the A/B/C density levels used for every footprint we build.</span>
+          </div>
+          <div class="standard">
+            <strong>IPC-2221 / 2222</strong>
+            <span>Generic and rigid board design requirements — clearances, vias, conductors, assembly.</span>
+          </div>
+          <div class="standard">
+            <strong>IPC-A-610</strong>
+            <span>Acceptability of electronic assemblies: what a good joint, fillet and placement actually look like.</span>
+          </div>
+          <div class="standard">
+            <strong>IPC-6012</strong>
+            <span>Qualification and performance of rigid PCBs, including annular ring and plating requirements.</span>
+          </div>
+          <div class="standard">
+            <strong>IPC-2581</strong>
+            <span>Digital product model exchange for handing a complete, unambiguous design to fabrication.</span>
+          </div>
+          <div class="standard">
+            <strong>J-STD-001</strong>
+            <span>Soldering requirements for the assembly process your footprints and paste apertures feed into.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section section--surface" id="faq">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions we get before the first part.</h2>
+        </div>
+
+        <div class="faq" style="margin-top:34px" data-reveal>
+          <div class="faq-item">
+            <button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-1">
+              Do you work inside our CAD environment?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel" id="faq-1">
+              <p>No remote access is needed. You send the template, library conventions and the part list; we build in the matching tool and deliver native library files, a change log and a review report. If you use a managed vault such as Altium 365, we can work to its folder and parameter structure.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-2">
+              Which footprint density do you use by default?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel" id="faq-2">
+              <p>Density B (nominal) unless you tell us otherwise. If the board is hand-assembled or will see rework, A is safer; if you are pushing density on a compact design, C saves space at the cost of rework access. The choice is recorded per part.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-3">
+              How do you verify pin numbering and orientation?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel" id="faq-3">
+              <p>We cross-check the pin table, package drawing, top-view marking and, where available, the manufacturer's recommended land pattern. Pin 1 is marked in copper, silkscreen and the 3D body. A second engineer repeats the check before release, and the source revision is logged in the part record.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-4">
+              Can you fix an existing library instead of rebuilding it?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel" id="faq-4">
+              <p>Yes. We start with an audit: geometry against the datasheet, naming consistency, duplicate parts, missing 3D models and lifecycle status. You get a prioritised defect list with an estimate, then we repair what matters and version the changes.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-5">
+              What do you need to quote a project?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel" id="faq-5">
+              <p>The CAD tool and version, the part list or datasheets, your density preference, any library template or naming rules, and your deadline. For layout work, add the schematic, mechanical constraints and board outline. A 20-part quote normally comes back the same day.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-button" type="button" aria-expanded="false" aria-controls="faq-6">
+              Do you handle 3D models and mechanical exports?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel" id="faq-6">
+              <p>Yes — STEP AP214 bodies matched to the footprint origin and orientation, with the body checked against the package drawing. This keeps enclosure clearance checks and connector height conflicts meaningful in the mechanical assembly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta-band" data-reveal>
+          <div class="cta-band-inner">
+            <div>
+              <h2>Tell us the gap. We'll scope the fix.</h2>
+              <p>Single part, a 200-part BOM, or a library that needs a full audit — send what you have and we'll reply with a plan.</p>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn--blue" href="contact.html">Request a quote</a>
+              <a class="btn btn--on-dark" href="mailto:info@pcbcomponent.co.in">Email the team</a>
+              <a class="cta-email" href="mailto:info@pcbcomponent.co.in">info@pcbcomponent.co.in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="PCB Component Services — home">
+            <img src="assets/img/logo.svg" alt="" width="36" height="36">
+            <span class="brand-text">
+              <span class="brand-name">PCB Component</span>
+              <span class="brand-sub">Services</span>
+            </span>
+          </a>
+          <p>ECAD library and component engineering for PCB design teams. Symbols, footprints, part data and layout support — built to standard, reviewed by engineers.</p>
+          <a class="footer-mail" href="mailto:info@pcbcomponent.co.in">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1.5" y="3" width="13" height="10" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="m2 4 6 4.5L14 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            info@pcbcomponent.co.in
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#symbols">Schematic symbols</a></li>
+            <li><a href="services.html#footprints">Footprints &amp; land patterns</a></li>
+            <li><a href="services.html#libraries">Library management</a></li>
+            <li><a href="services.html#data">Component data &amp; BOM</a></li>
+            <li><a href="services.html#layout">PCB layout support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="services.html#standards">Standards</a></li>
+            <li><a href="services.html#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Say hello</h4>
+          <ul>
+            <li><a href="mailto:info@pcbcomponent.co.in">info@pcbcomponent.co.in</a></li>
+            <li><a href="contact.html">Request a quote</a></li>
+            <li><a href="contact.html#send">What to send us</a></li>
+            <li><span style="font-size:.87rem;color:rgba(245,243,238,.45)">India · working with teams worldwide</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> PCB Component Services <span class="dot">·</span> All rights reserved</span>
+        <span>Symbols · Footprints · Data <span class="dot">·</span> IPC-7351B aligned</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
