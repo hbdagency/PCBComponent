@@ -1,2 +1,11 @@
-/._.freebuff
-/.freebuff
+# macOS
+.DS_Store
+._*
+*/._*
+**/.DS_Store
+**/*._*
+
+# Cache & dev
+.freebuff
+._.freebuff
+screens/*.rgba

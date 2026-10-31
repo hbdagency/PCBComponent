@@ -1,0 +1,5 @@
+# Files and folders to exclude from Vercel deployment
+screens/
+.freebuff
+._*
+.DS_Store
